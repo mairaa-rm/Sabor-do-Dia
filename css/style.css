@@ -1,0 +1,259 @@
+:root {
+    --cor1: #feeed0;
+    --cor2: #ed8513;
+    --cor3: #9a2716;
+
+    --fonte1: 'Poppins', sans-serif;
+    --fonte2: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: var(--cor1);
+    color: var(--cor3);
+    font-family: var(--fonte2);
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor3);
+    padding: 10px;
+}
+
+header img {
+    height: 80px;
+}
+
+/* Título da página */
+.titulo-pagina {
+    background-color: var(--cor1);
+    text-align: center;
+    padding: 1em;
+    color: var(--cor2);
+}
+
+/* Navegação */
+nav {
+    background-color: var(--cor3);
+    text-align: center;
+    padding: 20px 0;
+    color: var(--cor1);
+}
+
+nav a {
+    color: var(--cor1) !important;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+nav a:hover {
+    color: var(--cor1);
+}
+
+/* Conteúdo principal */
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+main h2 {
+    color: var(--cor2);
+    font-family: var(--fonte1);
+}
+
+main img {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+}
+
+main p {
+    text-align: justify;
+    line-height: 1.5;
+    font-size: large;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+/*Da página do cardápio*/
+.prato {
+    display: flex;
+    align-items: center;
+    gap: 1em; 
+    margin-bottom: 1em;
+    background-color: var(--cor1);
+    padding: 0.5em 1em;
+    border-radius: 6px;
+}
+
+.prato img {
+    width: 150px;
+    border: 2px solid var(--cor3);
+    border-radius: 4px;
+}
+
+.prato h2 {
+    color: var(--cor3);
+    font-family: var(--fonte1);
+    font-size: 2em; 
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+.prato p {
+    color: var(--cor2);
+    font-family: var(--fonte2);
+    font-size: 1.4em;
+    margin: 0;
+    line-height: 1.3em; 
+}
+
+.preco {
+    color: var(--cor3);
+    font-family: var(--fonte2);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+/*Da página do contato*/
+.contato-info p {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    margin: 5px 0;
+}
+
+.contato-info .icone {
+    width: 30px;  
+    height: 30px;  
+}
+
+.faleConosco{
+    text-align: left;
+    font-family: var(--fonte2);
+    font-weight: 150;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+#formContato {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+#formContato textarea {
+    width: 100%;
+    resize: none; 
+    padding: 12px;
+    border: 1.5px solid var(--cor3);
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: var(--fonte2);
+    line-height: 1.5;
+    background-color: var(--cor1);
+    box-sizing: border-box;
+}
+
+#formContato button {
+    width: 10%;
+    padding: 12px;
+    background-color: var(--cor3);
+    color: var(--cor1);
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+#formContato button:hover {
+    background-color: var(--cor2);
+}
+
+/*da página da galeria*/
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.foto {
+    width: 300px;       
+    height: 300px;
+    border: 3px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;  
+    box-sizing: border-box;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+    display: block;
+    margin: 0px;
+}
+
+/*Da página home*/
+.banner {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin: 3em;
+}
+
+.faixa-topo {
+    background-color: var(--cor3);
+    height: 150px;
+    width: 100%;
+}
+
+.navbar-principal {
+    background-color: var(--cor3); 
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-principal .navbar-nav {
+    display: flex;
+    gap: 60px; 
+}
+
+.navbar-principal .nav-link {
+    color: var(--cor1) !important; 
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+
+/* Responsividade*/
+@media (max-width: 768px) {
+    header img {
+        height: 60px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
