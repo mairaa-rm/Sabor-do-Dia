@@ -14,6 +14,11 @@ body {
     margin: 0;
 }
 
+nav.navbar .nav-link {
+    text-align: center;
+    font-size: 1.1em;
+}
+
 /* Cabeçalho */
 header {
     background-color: var(--cor3);
@@ -89,12 +94,13 @@ footer {
     gap: 1em; 
     margin-bottom: 1em;
     background-color: var(--cor1);
-    padding: 0.5em 1em;
+    padding: 1em;
     border-radius: 6px;
 }
 
 .prato img {
-    width: 150px;
+    width: 140px;
+    height: auto;
     border: 2px solid var(--cor3);
     border-radius: 4px;
 }
@@ -168,7 +174,7 @@ footer {
 }
 
 #formContato button {
-    width: 10%;
+    width: 100%;
     padding: 12px;
     background-color: var(--cor3);
     color: var(--cor1);
@@ -187,18 +193,18 @@ footer {
 .galeria {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
     justify-content: center;
+    gap: 16px;
     padding: 20px;
 }
 
 .foto {
-    width: 300px;       
-    height: 300px;
-    border: 3px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    border: 3px solid var(--cor3);
     border-radius: 8px;
-    overflow: hidden;  
-    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .foto img {
@@ -213,13 +219,14 @@ footer {
 .banner {
     width: 100%;
     height: auto;
+    display: block;
     align-items: center;
     margin: 3em;
 }
 
 .faixa-topo {
     background-color: var(--cor3);
-    height: 150px;
+    height: 10px;
     width: 100%;
 }
 
@@ -237,10 +244,16 @@ footer {
 
 .navbar-principal .nav-link {
     color: var(--cor1) !important; 
-    font-size: 18px;
+    font-size: 1.1em;
     letter-spacing: 1px;
+    text-align: center;
 }
 
+/*da página Sabor do dia*/
+.quem-somos img {
+    display: block;
+    margin: 0 auto 20px auto;
+}
 
 /* Responsividade*/
 @media (max-width: 768px) {
@@ -248,12 +261,79 @@ footer {
         height: 60px;
     }
 
+    nav {
+        padding: 10px 0;
+    }
+
     nav a {
-        display: inline-block;
-        margin: 10px;
+        display: block;
+        margin: 8px 0;
+        font-size: 1.1em;
+    }
+
+    .navbar-principal ul.navbar-nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+     .prato {
+        flex-direction: column;
+        text-align: center;
+        padding: 1em;
+    }
+
+    .prato img {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .prato p {
+        font-size: 1.1em;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .preco {
+        margin: 10px 0 0 0;
+        font-size: 1.6em;
+    }  
+    
+    #formContato button {
+    width: 100%;
+    }
+
+    .banner {
+        margin: 1em 0;
     }
 
     main {
         padding: 20px;
+    }
+
+    .contato-info p {
+        font-size: 1.1em;
+        text-align: left;
+        flex-wrap: wrap;
+    }
+
+    .contato-info .icone {
+        width: 26px;
+        height: 26px;
+    }
+
+    nav.navbar ul.navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .titulo-pagina h1 {
+        font-size: 1.4em;
+        padding: 0 10px;
+    }
+
+    .titulo-pagina h1 {
+        font-size: 1.4em;
+        padding: 0 10px;
     }
 }
