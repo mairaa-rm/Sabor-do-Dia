@@ -42,6 +42,7 @@ nav {
     background-color: var(--cor3);
     text-align: center;
     width: 100%;
+    padding: 1em;
     color: var(--cor1);
 }
 
