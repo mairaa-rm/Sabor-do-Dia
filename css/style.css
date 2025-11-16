@@ -41,7 +41,7 @@ header img {
 nav {
     background-color: var(--cor3);
     text-align: center;
-    padding: 20px 0;
+    width: 100%;
     color: var(--cor1);
 }
 
@@ -219,9 +219,8 @@ footer {
 .banner {
     width: 100%;
     height: auto;
-    display: block;
     align-items: center;
-    margin: 3em;
+    margin: 8em;
 }
 
 .faixa-topo {
@@ -232,7 +231,7 @@ footer {
 
 .navbar-principal {
     background-color: var(--cor3); 
-    padding: 20px 0px 20px 0px;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
