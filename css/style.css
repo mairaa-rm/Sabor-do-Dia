@@ -202,7 +202,7 @@ footer {
     width: 100%;
     max-width: 300px;
     aspect-ratio: 1 / 1;
-    border: 3px solid var(--cor3);
+    border: 3px solid var(--cor3) !important; 
     border-radius: 8px;
     overflow: hidden;
 }
@@ -276,7 +276,7 @@ footer {
         gap: 12px;
     }
     
-     .prato {
+    .prato {
         flex-direction: column;
         text-align: center;
         padding: 1em;
